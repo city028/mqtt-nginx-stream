@@ -1,5 +1,5 @@
 
-# Changes to this Fork
+# Nginx docker image for MQTT Reverse proxy
 
 The is a small change to the Dockerfile Tekn0ir created here:
 
