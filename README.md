@@ -5,7 +5,7 @@ This is a small change to the Dockerfile Tekn0ir created here:
 
 https://github.com/tekn0ir/nginx-stream
 
-The only thing changed realy is the removal of the "EXPOSE 80 443" command as this allowed me to run multiple Docker instances in parallel without these ports(80 and 433) being exposed by multiple containers and just the ones I have specified during docker run. Below an example how I use this to reverse proxy an MQTT stream to a backend MQTT server.
+The only thing changed realy is the removal of the "EXPOSE 80 443" command as this allowed me to run multiple Docker instances in parallel without these ports(80 and 443) being exposed by multiple containers and just the ones I have specified during docker run. Below an example how I use this to reverse proxy an MQTT stream to a backend MQTT server.
 
 ### MQTT Stream example
 
@@ -30,7 +30,7 @@ Config file (default.conf):
 	}
     
 
-As you can see, my backend server (192.168.0.3) listenes on port 1883 and the server also listens on port 1883.
+As you can see, my backend server (192.168.0.3) listenes on port 1883 and the nginx server also listens on port 1883.
 
 Please check out Tekn0ir's page for more information
 
