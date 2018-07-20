@@ -7,7 +7,7 @@ https://github.com/tekn0ir/nginx-stream
 
 The only thing changed realy is the removal of the "EXPOSE 80 443" command as this allowed me to run multiple Docker instances in parallel without these ports(80 and 433) being exposed by multiple containers and just the ones I have specified during docker run. Below an example how I use this to reverse proxy an MQTT stream to a backend MQTT server.
 
-### MQTT Stream examle
+### MQTT Stream example
 
 ```bash
 docker run -dit -p 18832:1883 --name mqttnginx --restart unless-stopped -v /root/docker-nginx/conf/conf.d:/opt/nginx/stream.conf.d:ro -d mqtt-nginx-stream
