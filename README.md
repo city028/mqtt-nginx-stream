@@ -14,9 +14,9 @@ docker run -dit -p 18832:1883 --name mqttnginx --restart unless-stopped -v /root
 ```
 
 The below option in the command alows me to add my own config file:
-
+```bash
 -v <path to my local config file>:/opt/nginx/stream.conf.d:ro
-    
+ ```   
 Config file (default.conf):
 
 	upstream mqtt_server {
