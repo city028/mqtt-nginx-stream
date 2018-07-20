@@ -1,7 +1,7 @@
 
 # Nginx docker image for MQTT Reverse proxy
 
-The is a small change to the Dockerfile Tekn0ir created here:
+This is a small change to the Dockerfile Tekn0ir created here:
 
 https://github.com/tekn0ir/nginx-stream
 
