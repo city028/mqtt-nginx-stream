@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Anders Åslund <anders.aslund@teknoir.se>
+MAINTAINER Jerry van de Stadt <jerry@vandestadt.com>
 
 RUN apt-get update && apt-get -y upgrade && \
     apt-get install -y wget libpcre3-dev build-essential libssl-dev && \
@@ -24,7 +24,5 @@ ADD nginx.conf /opt/nginx/conf/nginx.conf
 ADD zero_downtime_reload.sh /opt/nginx/sbin/zero_downtime_reload.sh
 
 WORKDIR /
-
-EXPOSE 80 443
 
 CMD ["/opt/nginx/sbin/nginx", "-g", "daemon off;"]
