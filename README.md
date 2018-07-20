@@ -32,11 +32,6 @@ Config file (default.conf):
 
 As you can see, my backend server (192.168.0.3) listenes on port 1883 and the server also listens on port 1883.
 
-Build your own image based upon this Docker file:
-
-```bash
-$ docker build -t="nginx-mqtt-stream" github.com/city028/nginx-stream/
-```
 Please check out Tekn0ir's page for more information
 
 https://github.com/tekn0ir/nginx-stream
