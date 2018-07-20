@@ -1,7 +1,7 @@
 
 # Changes to this Fork
 
-The is a small change to the Dockerfile teknOir created here:
+The is a small change to the Dockerfile tekn0ir created here:
 
 https://github.com/tekn0ir/nginx-stream
 
