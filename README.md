@@ -10,7 +10,9 @@ The only thing changed realy is the removal of the "EXPOSE 80 443" command as th
 ### MQTT Stream example
 
 ```bash
-docker run -dit -p 18832:1883 --name mqttnginx --restart unless-stopped -v /root/docker-nginx/conf/conf.d:/opt/nginx/stream.conf.d:ro -d mqtt-nginx-stream
+docker pull city028/mqtt-nginx-stream
+
+docker run -dit -p 18832:1883 --name mqttnginx --restart unless-stopped -v /root/docker-nginx/conf/conf.d:/opt/nginx/stream.conf.d:ro -d city028/mqtt-nginx-stream
 ```
 In the above example I am exposing port 18832 to the outside world (my other container is exposed to 18831).
 
@@ -30,7 +32,7 @@ Config file (default.conf):
 	}
     
 
-As you can see, my backend server (192.168.0.3) listenes on port 1883 and the nginx server also listens on port 1883.
+As you can see, my backend server (192.168.0.3) listens on port 1883 and the nginx server also listens on port 1883.
 
 Please check out Tekn0ir's page for more information
 
