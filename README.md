@@ -9,7 +9,9 @@ The only thing changed realy is the removal of the "EXPOSE 80 443" command as th
 
 ### MQTT Stream examle
 
+```bash
 docker run -dit -p 18832:1883 --name mqttnginx --restart unless-stopped -v /root/docker-nginx/conf/conf.d:/opt/nginx/stream.conf.d:ro -d mqtt-nginx-stream
+```
 
 The below option in the command alows me to add my own config file:
 
