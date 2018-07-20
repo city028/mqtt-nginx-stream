@@ -1,3 +1,12 @@
+
+# Changes to this Fork
+
+The is a small change to the Dockerfile teknOir created here:
+
+https://github.com/tekn0ir/nginx-stream
+
+The only thing changed realy is the "EXPOSE 80 443" command as this allowed my to run multiple Docker instances in parallel without these ports being exposed by multiple containers and just the ones I have specified during docker run. Below an example how I use this to reverse proxy an MQTT stream to a backend MQTT server.
+
 # Nginx Stream Dockerfile
 Nginx compiled with --with-stream to be able to create proxies or loadbalancers for non http protocols.
 
